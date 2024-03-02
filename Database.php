@@ -4,7 +4,7 @@
         private $username = "root";
         private $password = "";
         private $dbname = "presensi";
-        private $conn;
+        public $conn;
 
         // connection to database
         public function __construct() {
