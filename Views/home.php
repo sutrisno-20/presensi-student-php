@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Posisi Tengah dengan Icon Mata Password</title>
+  <title><?=$page;?></title>
   <!-- Load Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Load Font Awesome for icons -->
@@ -21,13 +21,16 @@
       cursor: pointer;
       pointer-events: auto;
     }
+    .letter-spacing {
+      letter-spacing: 5px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="row min-vh-100 justify-content-center align-items-center">
       <div class="col-md-6">
-        <h2 class="text-center mb-4">L O G I N</h2>
+        <h2 class="text-center mb-4"><?= $title; ?></h2>
         <form>
           <div class="mb-3">
             <label for="username" class="form-label">Usrname</label>
@@ -44,7 +47,7 @@
             <button type="submit" name="login" class="btn btn-primary">L O G I N</button>
           </div>
           <div class="mb-3 d-flex justify-content-center">
-            <button type="submit" name="register" class="btn btn-primary">R e g i s t e r</button>
+            <button class="btn btn-primary"><a href="Views/register.php" class="text-white text-decoration-none">R e g i s t e r</a></button>
           </div>
         </form>
       </div>
