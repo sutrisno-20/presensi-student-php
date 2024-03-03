@@ -3,8 +3,8 @@
     $router = new Router();
 
     // Router
-    $router->add("","homeController@index");
-    $router->add("home","homeController@index");
+    $router->add("","homeController@addUser");
+    // $router->add("home","homeController@index");
     $router->add("register","homeController@addUser");
 
     $requestedURL = isset($_GET['url'])?$_GET['url'] : '';
